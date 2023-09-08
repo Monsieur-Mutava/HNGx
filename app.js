@@ -25,7 +25,7 @@ app.get('/api', (req, res) => {
         currentDay,
         utcTime,
         track,
-        githubFileUrl: 'YOUR_GITHUB_REPO_URL/blob/master/PATH_TO_YOUR_FILE',
+        githubFileUrl: 'https://github.com/Monsieur-Mutava/HNGx/blob/main/app.js',
         githubRepoUrl: 'https://github.com/Monsieur-Mutava/HNGx.git',
         statusCode: 200,
     };
