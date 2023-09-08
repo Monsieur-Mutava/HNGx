@@ -2,11 +2,9 @@ const express = require('express');
 const app = express();
 
 app.get('/api', (req, res) => {
-    // Get query parameters from the request
     const slackName = req.query.slack_name;
     const track = req.query.track;
 
-    // Check if required parameters are present
     if (!slackName || !track) {
         return res.status(400).json({ error: 'slack_name and track are required parameters.' });
     }
