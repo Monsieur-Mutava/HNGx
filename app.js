@@ -17,7 +17,7 @@ app.get('/api', (req, res) => {
 
     // Get the current UTC time within +/-2 minutes
     const now = new Date();
-    const utc_time = new Date(now.getTime() + (now.getTimezoneOffset() * 60000)).toISOString();
+    const utc_time = const utc_time = now.toISOString().replace(/\.\d{3}Z$/, 'Z');
 
     // Construct the response object
     const response = {
